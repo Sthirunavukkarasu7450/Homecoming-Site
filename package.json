@@ -5,11 +5,12 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist",
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-    "test": "\"npx @tailwindcss/cli -i ./src/index.css -o ./dist/output.css\"",
-    "deploy": "gh-pages -d dist"
+    "test": "\"npx @tailwindcss/cli -i ./src/index.css -o ./dist/output.css\""
   },
   "dependencies": {
     "@emotion/react": "^11.14.0",
