@@ -7,5 +7,5 @@ export default defineConfig({
     react(),
     tailwindcss(),
   ],
-  base: '/Homecoming-Site'
+  base: '/Homecoming-Site/'
 });
