@@ -7,5 +7,5 @@ export default defineConfig({
     react(),
     tailwindcss(),
   ],
-  base: '/Sthirunavukkarasu7450.github.io/'
+  base: '/Homecoming-Site'
 });
