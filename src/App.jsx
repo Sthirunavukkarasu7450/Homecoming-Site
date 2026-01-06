@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom"
+import { Routes, Route } from "react-router-dom"
 import Navbar from "./components/navbar"
 import Footer from "./components/footer"
 import ScrollToTop from "./components/ScrollToTop"
@@ -14,9 +14,10 @@ import Events from "./pages/events"
 
 function App() {
   return (
-    <BrowserRouter>
-    <ScrollToTop />
-    <Navbar />
+    <>
+      <ScrollToTop />
+      <Navbar />
+
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
@@ -25,11 +26,15 @@ function App() {
         <Route path="/directory" element={<Directory />} />
         <Route path="/participate/volunteers/captains" element={<Captains />} />
         <Route path="/participate/forms-and-applications" element={<Forms />} />
-        <Route path="/participate/forms-and-applications/captain-application" element={<CaptainApps />} />
+        <Route
+          path="/participate/forms-and-applications/captain-application"
+          element={<CaptainApps />}
+        />
         <Route path="/events" element={<Events />} />
       </Routes>
-    <Footer />
-    </BrowserRouter>
+
+      <Footer />
+    </>
   )
 }
 
