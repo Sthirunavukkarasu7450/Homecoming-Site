@@ -7,6 +7,7 @@ import sponsorData from "../data/sponsorData"
 import quickLinks from "../data/quickLinks"
 import quickEvents from "../data/eventQuickCards"
 import HeroVideo from "../assets/home/Hero_Video.mp4"
+import { Link } from "react-router-dom"
 
 export default function Home() {
   pageTitle("Home | Penn State Homecoming")
@@ -30,10 +31,10 @@ export default function Home() {
               through active engagement of students, alumni, faculty and staff across the community.
             </div>
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 text-center p-8 lg:w-1/3">
-              <a href="/participate" className="block text-white rounded-2xl bg-pink-800 p-4 hover:bg-pink-950 hover:scale-110 transform transition-all duration-700 col-span-1">
+              <Link href="/participate" className="block text-white rounded-2xl bg-pink-800 p-4 hover:bg-pink-950 hover:scale-110 transform transition-all duration-700 col-span-1">
                 Join The Celebration
-              </a>
-              <a href="/about" className="block border-2 border-white rounded-2xl text-white bg-transparent p-4 hover:scale-110 transform transition-all duration-700 col-span-1">Learn More About Us</a>
+              </Link>
+              <Link href="/about" className="block border-2 border-white rounded-2xl text-white bg-transparent p-4 hover:scale-110 transform transition-all duration-700 col-span-1">Learn More About Us</Link>
             </div>
           </div>
         </div>

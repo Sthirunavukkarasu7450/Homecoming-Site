@@ -3,6 +3,7 @@ import Hero from "../components/hero"
 import heroImg from "../assets/general_hero_img.jpg"
 import vintageGamePic from "../assets/about/vintage_game_pic.jpg"
 import directorsPic from "../assets/directors_old_main_pic.jpg"
+import { Link } from "react-router-dom"
 
 
 
@@ -59,7 +60,7 @@ export default function About() {
             <br />
             The Homecoming 2025 Executive Committee was selected November 9, 2025!
             </div>
-            <a href="/about/Directors" className=" bg-pink-700 text-white transition-all hover:bg-pink-950 duration-750 px-8 py-4 rounded-2xl text-lg shadow-md shadow-pink-950 transform hover:scale-110">Meet the Executive Committee</a>
+            <Link href="/about/Directors" className=" bg-pink-700 text-white transition-all hover:bg-pink-950 duration-750 px-8 py-4 rounded-2xl text-lg shadow-md shadow-pink-950 transform hover:scale-110">Meet the Executive Committee</Link>
           </div>
           <div className="col-span-1 px-4 py-2">
             <img src={directorsPic} alt="" className="shadow-lg shadow-black" />
