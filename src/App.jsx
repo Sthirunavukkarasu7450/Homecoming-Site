@@ -2,6 +2,8 @@ import { Routes, Route } from "react-router-dom"
 import Navbar from "./components/navbar"
 import Footer from "./components/footer"
 import ScrollToTop from "./components/ScrollToTop"
+import RedirectHandler from "./components/RedirectHandler";
+
 import Home from "./pages/home"
 import About from "./pages/about"
 import Directors from "./pages/directors"
@@ -15,6 +17,7 @@ import Events from "./pages/events"
 function App() {
   return (
     <>
+      <RedirectHandler />
       <ScrollToTop />
       <Navbar />
 
