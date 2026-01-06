@@ -1,6 +1,6 @@
 import ParadeImg from "../assets/home/quicklinks/parade.jpg"
 import fbImg from "../assets/home/quicklinks/fbimg.jpg"
-import fbScheduleImg from "../assets/home/quicklinks/fbScheduleImg.jpg"
+import fbScheduleImg from "../assets/home/quicklinks/fbscheduleimg.jpg"
 import gameDayImg from "../assets/home/quicklinks/gamedayimg.jpg"
 
 const QuickLinks = [
