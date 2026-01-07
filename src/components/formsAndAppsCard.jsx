@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom"
 import directory from "../data/directors/directory"
 
 export default function FormsAndAppsCard({ form }) {
@@ -30,9 +31,9 @@ export default function FormsAndAppsCard({ form }) {
       </div>
 
       {open && (
-        <a href={form.link} className="mt-6 w-full px-4 py-2 bg-pink-700 text-white text-center rounded-lg hover:bg-pink-800 transition">
+        <Link to={form.link} className="mt-6 w-full px-4 py-2 bg-pink-700 text-white text-center rounded-lg hover:bg-pink-800 transition">
           Apply
-        </a>
+        </Link>
       )}
     </div>
   )

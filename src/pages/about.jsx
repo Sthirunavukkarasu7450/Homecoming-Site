@@ -60,7 +60,7 @@ export default function About() {
             <br />
             The Homecoming 2025 Executive Committee was selected November 9, 2025!
             </div>
-            <Link href="/about/Directors" className=" bg-pink-700 text-white transition-all hover:bg-pink-950 duration-750 px-8 py-4 rounded-2xl text-lg shadow-md shadow-pink-950 transform hover:scale-110">Meet the Executive Committee</Link>
+            <Link to="/about/Directors" className=" bg-pink-700 text-white transition-all hover:bg-pink-950 duration-750 px-8 py-4 rounded-2xl text-lg shadow-md shadow-pink-950 transform hover:scale-110">Meet the Executive Committee</Link>
           </div>
           <div className="col-span-1 px-4 py-2">
             <img src={directorsPic} alt="" className="shadow-lg shadow-black" />
